@@ -89,9 +89,9 @@
     data.feed.entry.forEach(function (row) {
       var rowData = parseRow(row);
 
-      if (rowData.verified) {
+      if (rowData.verified.toLowerCase() === "verified") {
         verifiedCentres.push(parseRow(row));
-      } else {
+      } else if (rowData.verified.toLowerCase() === "unverified") {
         unverifiedCentres.push(parseRow(row));
       }
     });
