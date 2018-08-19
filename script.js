@@ -83,7 +83,7 @@
     var unverifiedCentres = [];
 
     if (status==='success') {
-      document.getElementById('loader').classList.add("hide");
+      $('.loader').addClass("hide");
     }
 
     data.feed.entry.forEach(function (row) {
