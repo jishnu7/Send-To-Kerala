@@ -1,6 +1,6 @@
 # Send to Kerala
 
-![Send to Kerala](logo.svg)
+![Send to Kerala](logo.png)
 
 There are a multitude of efforts to contribute to the relief efforts - food, cloth and money collection drives. But there is no single point that coordinates these efforts, resulting in logistical problems. A lot of the resources do not reach places that need them solely because of lack of data.
 
