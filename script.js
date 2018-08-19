@@ -30,7 +30,10 @@
 
         <div class="entry-timestamp">
           <div>
-            Added: <span class="added-on"></span>, last update: <span class="last-update"></span>
+            Added: <span class="added-on"></span>
+          </div>
+          <div>
+            Last update: <span class="last-update"></span>
           </div>
         </div>
       </div>
