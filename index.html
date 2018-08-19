@@ -11,27 +11,29 @@
     <script src="./list.js"></script>
   </head>
   <body>
-    
+    <div id="users">
       <header>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="logo-container">
-              <a href="http://sendtokerala.in/">
-                <img src="logo.jpg" alt="Logo">
-              </a>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="logo-container">
+                <a href="http://sendtokerala.in/">
+                  <img src="logo.svg" alt="Logo">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <nav class="navigation">
+                <input class="search search-bar" placeholder="Search for collection centers..." />
+              </nav>
             </div>
           </div>
         </div>
       </header>
 
     <div class="container">
-      <div id="users">
+      
         <div class="row nav-container">
-          <div class="col-md-12">
-              <nav class="navigation">
-                <input class="search search-bar" placeholder="Search for collection centers..." />
-              </nav>
-          </div>
           <div class="col-md-12">
             <div class="row sort-container">
               <div class="col-md-1">
@@ -59,10 +61,10 @@
             <ul class="list"></ul>
           </div>
         </div>
-      </div>
+  
     </div>
 
-
+</div>
           <script src="./data_collection.js" async></script>
           <script src="./script.js" async></script>
 
