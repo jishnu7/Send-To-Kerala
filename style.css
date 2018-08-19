@@ -331,6 +331,9 @@ header{
 .hide{
   display: none;
 }
+.link-normal, .link-normal:hover, .link-normal:visited{
+  color: #4e701d;
+}
 
 
 @keyframes placeHolderShimmer{
@@ -385,6 +388,11 @@ header{
 }
 .parent-tabs-container [class*="col-md"]{
   padding: 0px;
+}
+
+.footer{
+  border-top: 1px solid #ddd;
+  text-align: center;
 }
 
 @media(min-width: 800px){
