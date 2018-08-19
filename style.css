@@ -228,6 +228,10 @@ header{
   font-size: 1.0rem;
   padding: 15px 15px 15px 45px;
   outline: none;
+  transition: all 0.1s ease-in;
+}
+.search-bar:focus{
+  border-color: #c6e499;
 }
 .nav-search{
   position: relative;
