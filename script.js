@@ -60,6 +60,6 @@
   
   var userList = new List('users', options, COLLECTION_CENTRES);
 
-  document.getElementById('list-length').innerHTML = userList.size();
+  // document.getElementById('list-length').innerHTML = userList.size();
 })();
 

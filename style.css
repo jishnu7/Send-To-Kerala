@@ -153,14 +153,22 @@ header{
   position: relative;
 }
 
-.entry > div:not(:last-child):after {
+.entry-info:after {
   position: absolute;
   content: '';
-  height: 100%;
-  top: 0em;
-  bottom: 0em;
+  top: 1em;
+  bottom: 1em;
   right: 0em;
   border-right: 1px solid #ddd;
+}
+
+.entry-info:before {
+  position: absolute;
+  content: '';
+  top: 1em;
+  bottom: 1em;
+  left: 0em;
+  border-left: 1px solid #ddd;
 }
 
 .entry-timestamp {
@@ -286,7 +294,37 @@ header{
 .mr5{
   margin-right: 5px; 
 }
+.placeholder-big{
+  height: 22px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+.placeholder-small{
+  height: 14px;
+  border-radius: 3px;
+  width: 70%;
+}
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -400px 0
+    }
+    100%{
+        background-position: 400px 0
+    }
+}
 
+.animated-bg {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8 !important;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%) !important;
+    background-size: 800px 104px !important;
+    position: relative;
+}
 @media(max-width: 800px){
   .sort-items-container{
     text-align: left;
@@ -322,5 +360,11 @@ header{
   }
   .list-intro-header{
     margin-top: 5px;
+  }
+  .entry-info:after {
+    display: none;
+  }
+  .entry-info:before {
+    display: none;
   }
 }

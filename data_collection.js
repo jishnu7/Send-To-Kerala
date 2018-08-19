@@ -9,7 +9,7 @@ var COLLECTION_CENTRES = [
     'active-till': 'Aug 20, 9PM',
     'target-centre': 'Chengannur',
     'contact': 'Raj, 987654321',
-    'priority-items': 'Sanitary Napkins',
+    'priority-items': ['Sanitary Napkins', 'Food', 'Water'],
     'added-on': 'Aug 19, 5AM',
     'last-update': 'Aug 19, 7AM'
   },
@@ -37,7 +37,7 @@ var COLLECTION_CENTRES = [
     'active-till': 'Aug 29, 9PM',
     'target-centre': 'Chengannur',
     'contact': 'Ramya, 987654321',
-    'priority-items': 'Sanitary Napkins',
+    'priority-items': ['Water', 'Sanitary Napkins'],
     'added-on': 'Aug 23, 5AM',
     'last-update': 'Aug 24, 7AM'
   }
