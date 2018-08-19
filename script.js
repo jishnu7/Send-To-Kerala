@@ -86,7 +86,6 @@
     var unverifiedCentres = [];
 
     if (status==='success') {
-      $('.loader').addClass("hide");
       switchTab("verified");
       $('.loader').hide();
     }
@@ -113,24 +112,22 @@
       unverifiedList.search(searchString);
     });
   });
-
-
 })();
 
 
 function switchTab(tab){
   if(tab==='verified'){
-    document.getElementById("verified").classList.remove("hide");
-    document.getElementById("unverified").classList.add("hide");
+    $("#verified").removeClass('hide');
+    $("#unverified").addClass('hide');
 
-    document.getElementById("parent-tab-item-verified").classList.add("parent-tab-item-selected");
-    document.getElementById("parent-tab-item-unverified").classList.remove("parent-tab-item-selected");
+    $("#parent-tab-item-verified").addClass("parent-tab-item-selected");
+    $("#parent-tab-item-unverified").removeClass("parent-tab-item-selected");
 
   } else {
-    document.getElementById("unverified").classList.remove("hide");
-    document.getElementById("verified").classList.add("hide");
+    $("#verified").addClass('hide');
+    $("#unverified").removeClass('hide');
 
-    document.getElementById("parent-tab-item-unverified").classList.add("parent-tab-item-selected");
-    document.getElementById("parent-tab-item-verified").classList.remove("parent-tab-item-selected");
+    $("parent-tab-item-unverified").addClass("parent-tab-item-selected");
+    $("parent-tab-item-verified").removeClass("parent-tab-item-selected");
   }
 }
