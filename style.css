@@ -368,6 +368,9 @@ header{
   border-bottom: 5px solid #c6e499;
   color: #333;
 }
+.parent-tabs-container [class*="col-md"]{
+  padding: 0px;
+}
 
 @media(min-width: 800px){
   .web-only{
@@ -378,6 +381,9 @@ header{
   }
   .web-align-right{
     text-align: right;
+  }
+  .sort-items-container{
+    float: right;
   }
 }
 

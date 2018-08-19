@@ -58,23 +58,26 @@
     </div>`
   };
 
+  function getProp (row, name) {
+    return row['gsx$' + name] &&
+      row['gsx$' + name].$t || '';
+  }
 
   function parseRow (row) {
     return {
-      'country': row['gsx$contact'] && row['gsx$contact'].$t,
-      'state': row['gsx$state'] && row['gsx$state'].$t,
-      'city': row['gsx$city'] && row['gsx$city'].$t,
-      'address': row['gsx$address'] && row['gsx$address'].$t,
-      'gps': row['gsx$gps'] && row['gsx$gps'].$t,
-      'next-load': row['gsx$next-load'] && row['gsx$next-load'].$t,
-      'active-till': row['gsx$active-till'] && row['gsx$active-till'].$t,
-      'target-centre': row['gsx$target-centre'] && row['gsx$target-centre'].$t,
-      'contact': row['gsx$contact'] && row['gsx$contact'].$t,
-      'priority-items': row['gsx$contact'] && row['gsx$contact'].$t,
-      'added-on': row['gsx$timestamp'] && row['gsx$timestamp'].$t,
-      'last-update': row['gsx$last-update'] && row['gsx$last-update'].$t,
-      'status': row['gsx$status'] && row['gsx$status'].$t,
-      'verified': row['gsx$verified'] && row['gsx$verified'].$t
+      'country': getProp(row, 'country'),
+      'state': getProp(row, 'state'),
+      'city': getProp(row, 'location'),
+      'address': getProp(row, 'locationaddress'),
+      'gps': getProp(row, 'addressmaplink'),
+      'next-load': getProp(row, 'nextload'),
+      'active-till': getProp(row, 'centreactivetill'),
+      'target-centre': getProp(row, 'targetcentre'),
+      'contact': getProp(row, 'contactdetails'),
+      'priority-items': getProp(row, 'priorityitems'),
+      'added-on': getProp(row, 'timestamp'),
+      'last-update': getProp(row, 'lastupdate'),
+      'verified': getProp(row, 'verified')
     }
   }
 
@@ -90,9 +93,9 @@
     data.feed.entry.forEach(function (row) {
       var rowData = parseRow(row);
 
-      if (rowData.verified) {
+      if (rowData.verified.toLowerCase() === "verified") {
         verifiedCentres.push(parseRow(row));
-      } else {
+      } else if (rowData.verified.toLowerCase() === "unverified") {
         unverifiedCentres.push(parseRow(row));
       }
     });
@@ -100,7 +103,8 @@
     var verifiedList = new List('verified', options, verifiedCentres);
     var unverifiedList = new List('unverified', options, unverifiedCentres);
 
-    $('#list-length').innerHTML = verifiedCentres.length + unverifiedCentres.length;
+    $('.verified-num').text('(' + verifiedCentres.length + ')');
+    $('.unverified-num').text('(' + unverifiedCentres.length + ')');
 
     $('#search-field').on('keyup', function() {
       var searchString = $(this).val();
