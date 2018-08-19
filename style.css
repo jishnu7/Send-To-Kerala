@@ -261,9 +261,9 @@ header{
   margin: 10px 10px 0px 0px;
 }
 .sort.asc{
-  background: #c7e1fc;
-  color: #316ca6;
-  border-color: #c7e1fc;
+  background: #c6e499;
+  color: #4e701d;
+  border-color: #c6e499;
 }
 
 @media(max-width: 800px){
