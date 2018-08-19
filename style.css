@@ -129,6 +129,7 @@ header{
 .navigation {
   display: flex;
   justify-content: center;
+  margin-bottom: 1em;
 }
 .sort-container{
   margin-top: 0.7rem;
