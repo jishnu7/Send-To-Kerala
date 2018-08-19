@@ -38,7 +38,7 @@
       <div class="col-md-5 entry-info">
         <div class="entry-target">
           <h3>
-            <span class="next-load"></span>,
+            <span class="next-load"></span>
             <span class="target-centre"></span> 
           </h3>
 
@@ -58,9 +58,11 @@
     </div>`
   };
 
-  function getProp (row, name) {
-    return row['gsx$' + name] &&
-      row['gsx$' + name].$t || '';
+  function getProp (row, name, post) {
+    var val = row['gsx$' + name];
+    post = post || '';
+
+    return val && val.$t ? val.$t + post : '';
   }
 
   function parseRow (row) {
@@ -70,7 +72,7 @@
       'city': getProp(row, 'location'),
       'address': getProp(row, 'locationaddress'),
       'gps': getProp(row, 'addressmaplink'),
-      'next-load': getProp(row, 'nextload'),
+      'next-load': getProp(row, 'nextload', ','),
       'active-till': getProp(row, 'centreactivetill'),
       'target-centre': getProp(row, 'targetcentre'),
       'contact': getProp(row, 'contactdetails'),
