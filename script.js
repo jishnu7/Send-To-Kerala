@@ -99,7 +99,8 @@
     var verifiedList = new List('verified', options, verifiedCentres);
     var unverifiedList = new List('unverified', options, unverifiedCentres);
 
-    $('#list-length').innerHTML = verifiedCentres.length + unverifiedCentres.length;
+    $('.verified-num').text('(' + verifiedCentres.length + ')');
+    $('.unverified-num').text('(' + unverifiedCentres.length + ')');
 
     $('#search-field').on('keyup', function() {
       var searchString = $(this).val();
