@@ -57,9 +57,41 @@
       </div>
     </div>`
   };
-  
-  var userList = new List('users', options, COLLECTION_CENTRES);
 
-  // document.getElementById('list-length').innerHTML = userList.size();
+
+  function parseRow (row) {
+    return {
+      'country': row['gsx$contact'] && row['gsx$contact'].$t,
+      'state': row['gsx$state'] && row['gsx$state'].$t,
+      'city': row['gsx$city'] && row['gsx$city'].$t,
+      'address': row['gsx$address'] && row['gsx$address'].$t,
+      'gps': row['gsx$gps'] && row['gsx$gps'].$t,
+      'next-load': row['gsx$next-load'] && row['gsx$next-load'].$t,
+      'active-till': row['gsx$active-till'] && row['gsx$active-till'].$t,
+      'target-centre': row['gsx$target-centre'] && row['gsx$target-centre'].$t,
+      'contact': row['gsx$contact'] && row['gsx$contact'].$t,
+      'priority-items': row['gsx$contact'] && row['gsx$contact'].$t,
+      'added-on': row['gsx$timestamp'] && row['gsx$timestamp'].$t,
+      'last-update': row['gsx$last-update'] && row['gsx$last-update'].$t,
+      'status': row['gsx$status'] && row['gsx$status'].$t
+    }
+  }
+
+  $.getJSON("http://data.sendtokerala.in/proxy.php?csurl=spreadsheets.google.com/feeds/list/10DP6QY4GuhWUlN9MT4Z7tszpg6DOqx6R6QRfQTDq_c8/1/public/values?alt=json", function (data, status)  {
+
+    if (status==='success') {
+      document.getElementById('loader').classList.add("hide");
+    }
+
+    var centres = [];
+
+    data.feed.entry.forEach(function (row) {
+      centres.push(parseRow(row));
+    });
+
+    var userList = new List('users', options, centres);
+    $('#list-length').innerHTML = centres.length
+  });
+
 })();
 
