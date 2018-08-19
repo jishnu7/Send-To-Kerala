@@ -30,7 +30,10 @@
 
         <div class="entry-timestamp">
           <div>
-            Added: <span class="added-on"></span>, last update: <span class="last-update"></span>
+            Added: <span class="added-on"></span>
+          </div>
+          <div>
+            Last update: <span class="last-update"></span>
           </div>
         </div>
       </div>
@@ -48,21 +51,27 @@
           </h4>
         </div>
 
-        <span class="entry-timestamp">Priority items needed</span>
         <div class="entry-needed priority-items"></div>
       </div>
 
-      <div class="col-md-2 entry-contact">
-          <span class="contact"></span>
+      <div class="col-md-3 entry-contact">
+        <div class="entry-title">Contact</div>
+
+        <div class="contact"></div>
       </div>
     </div>`
   };
 
-  function getProp (row, name, post) {
+  function getProp (row, name, pre, post) {
     var val = row['gsx$' + name];
+    pre = pre || '';
     post = post || '';
 
-    return val && val.$t ? val.$t + post : '';
+    return val && val.$t ? pre + val.$t + post : '';
+  }
+
+  function commaLineBreak(val) {
+    return val.split(',').join("<br/>");
   }
 
   function parseRow (row) {
@@ -72,11 +81,11 @@
       'city': getProp(row, 'location'),
       'address': getProp(row, 'locationaddress'),
       'gps': getProp(row, 'addressmaplink'),
-      'next-load': getProp(row, 'nextload', ','),
+      'next-load': getProp(row, 'nextload', null, ','),
       'active-till': getProp(row, 'centreactivetill'),
       'target-centre': getProp(row, 'targetcentre'),
-      'contact': getProp(row, 'contactdetails'),
-      'priority-items': getProp(row, 'priorityitems'),
+      'contact': commaLineBreak(getProp(row, 'contactdetails')),
+      'priority-items': getProp(row, 'priorityitems', '<div class="entry-title">Priority items needed</div>'),
       'added-on': getProp(row, 'timestamp'),
       'last-update': getProp(row, 'lastupdate'),
       'verified': getProp(row, 'verified')
