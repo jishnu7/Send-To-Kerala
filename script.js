@@ -127,7 +127,7 @@ function switchTab(tab){
     $("#verified").addClass('hide');
     $("#unverified").removeClass('hide');
 
-    $("parent-tab-item-unverified").addClass("parent-tab-item-selected");
-    $("parent-tab-item-verified").removeClass("parent-tab-item-selected");
+    $("#parent-tab-item-unverified").addClass("parent-tab-item-selected");
+    $("#parent-tab-item-verified").removeClass("parent-tab-item-selected");
   }
 }
