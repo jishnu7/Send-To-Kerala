@@ -130,3 +130,11 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+
+.entry-timestamp {
+  font-size: 0.6em;
+}
+
+.entry-location, .entry-info, .entry-contact {
+  padding: 1em;
+}

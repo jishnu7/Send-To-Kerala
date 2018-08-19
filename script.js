@@ -23,8 +23,12 @@
         <a class="gps" href="gps">Google Maps</a>
 
         <div class="entry-timestamp">
-          Added: <div class="added-on"></div>
-          Last Update: <div class="last-update"></div>
+          <div>
+            Added: <span class="added-on"></span>
+          </div>
+          <div>
+            Last Update: <span class="last-update"></span>
+          </div>
         </div>
       </div>
 
