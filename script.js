@@ -88,6 +88,7 @@
     if (status==='success') {
       $('.loader').addClass("hide");
       switchTab("verified");
+      $('.loader').hide();
     }
 
     data.feed.entry.forEach(function (row) {
