@@ -351,6 +351,7 @@ footer{
 
 footer > a {
   color: #999;
+  font-weight: 400;
 }
 
 @media(min-width: 800px){
