@@ -258,6 +258,7 @@ header{
 }
 .address{
   margin-bottom: 0.2rem;
+  line-height: 1.4;
 }
 .maps-container{
   text-align: right;
