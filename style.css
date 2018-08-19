@@ -298,4 +298,7 @@ header{
     top: 0rem;
     margin-bottom: 0.5rem;
   }
+  .logo-container {
+    text-align: center;
+  }
 }
