@@ -15,24 +15,27 @@
       'last-update'
     ],
 
-    item: `<div class="entry">
-      <div class="entry-location">
-        <h2 class="city"></h2>
-        <div class="address"></div>
-        <div class="state"></div>
-        <a class="gps" href="gps">Google Maps</a>
+    item: `<div class="row entry">
+      <div class="col-md-4 entry-location">
+        <div class="row address-details">
+          <div class="col-md-9">
+            <h2 class="city"></h2>
+            <div class="address"></div>
+            <div class="state"></div>
+          </div>
+          <div class="col-md-3 maps-container">
+            <a class="gps" href="gps"><img src="maps-icon.png"></a>
+          </div>
+        </div>
 
         <div class="entry-timestamp">
           <div>
-            Added: <span class="added-on"></span>
-          </div>
-          <div>
-            Last Update: <span class="last-update"></span>
+            Added: <span class="added-on"></span>, last update: <span class="last-update"></span>
           </div>
         </div>
       </div>
 
-      <div class="entry-info">
+      <div class="col-md-4 entry-info">
         <div class="entry-target">
           <h3>
             <span class="next-load"></span>

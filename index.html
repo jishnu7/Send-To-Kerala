@@ -6,38 +6,53 @@
     <title>Send to Kerala</title>
 
     <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./grid12.css" type="text/css">
     <script src="./list.js"></script>
   </head>
   <body>
-  <header>
-    <h1>Send to Kerala</h1>
+    <div class="container">
+        <header>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="logo-container">
+                <a href="http://sendtokerala.in/">
+                  <img src="logo.jpg" alt="Logo">
+                </a>
+              </div>
+            </div>
+          </div>
 
-    <nav class="navigation">
-      <input class="search" placeholder="Search" />
-    </nav>
+          <div class="row">
+            <div class="col-md-10">
+                <nav class="navigation">
+                  <input class="search search-bar" placeholder="Search here..." />
+                </nav>
+            </div>
+            <div class="col-md-2">
+              <nav class="navigation">
+                <button class="sort" data-sort="next-load">
+                  Sort Based on Next Load
+                </button>
+                <button class="sort" data-sort="active-till">
+                  Sort Based on Active Till
+                </button>
+                <button class="sort" data-sort="last-update">
+                  Sort Based on Last update
+                </button>
+              </nav>
+            </div>
+          </div>
+        </header>
 
-    <nav class="navigation">
-      <button class="sort" data-sort="next-load">
-        Sort Based on Next Load
-      </button>
-      <button class="sort" data-sort="active-till">
-        Sort Based on Active Till
-      </button>
-      <button class="sort" data-sort="last-update">
-        Sort Based on Last update
-      </button>
-    </nav>
-  </header>
 
+        <section>
+          <div id="users">
+            <ul class="list"></ul>
+          </div>
 
-  <section>
-    <div id="users">
-      <ul class="list"></ul>
+          <script src="./data_collection.js" async></script>
+          <script src="./script.js" async></script>
+        </section>
     </div>
-
-    <script src="./data_collection.js" async></script>
-    <script src="./script.js" async></script>
-  </section>
-
   </body>
 </html>
