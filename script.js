@@ -85,6 +85,7 @@
     if (status==='success') {
       document.getElementById('loader').classList.add("hide");
     }
+
     data.feed.entry.forEach(function (row) {
       var rowData = parseRow(row);
 
@@ -98,7 +99,13 @@
     var verifiedList = new List('verified', options, verifiedCentres);
     var unverifiedList = new List('unverified', options, unverifiedCentres);
 
-    $('#list-length').innerHTML = centres.length
+    $('#list-length').innerHTML = verifiedCentres.length + unverifiedCentres.length;
+
+    $('#search-field').on('keyup', function() {
+      var searchString = $(this).val();
+      verifiedList.search(searchString);
+      unverifiedList.search(searchString);
+    });
   });
 
 })();
