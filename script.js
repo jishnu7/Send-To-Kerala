@@ -15,7 +15,7 @@
       'last-update'
     ],
 
-    item: `<ul>
+    item: `<ul class="entry">
         <li class="state"></li>
         <li class="city"></li>
         <li class="address"></li>

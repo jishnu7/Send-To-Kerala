@@ -119,3 +119,8 @@ a:hover {
     padding: 1.5rem;
   }
 }
+
+.entry {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
