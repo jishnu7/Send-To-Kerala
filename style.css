@@ -172,7 +172,7 @@ header{
 }
 
 .entry-timestamp {
-  font-size: 0.75em;
+  font-size: 0.8em;
   color: #aaa;
   font-weight: 100;
 }
@@ -269,7 +269,7 @@ header{
   display: inline-block;
   color: #888;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 300;
   position: relative;
   margin-right: 15px;
   margin-bottom: 0px;
@@ -468,5 +468,8 @@ header{
   }
   .web-only-inline{
     display: none;
+  }
+  .entry-timestamp {
+    font-size: 0.9rem;
   }
 }
