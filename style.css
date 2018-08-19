@@ -273,6 +273,7 @@ header{
   position: relative;
   margin-right: 15px;
   margin-bottom: 0px;
+  line-height: 1.4;
 }
 .header-dark{
   color: #444;
@@ -373,6 +374,7 @@ header{
   text-transform: uppercase;
   font-size: 0.9rem;
   cursor: pointer;
+  text-align: center;
 }
 .parent-tab-item-selected, .parent-tab-item-selected:hover{
   border-bottom: 5px solid #c6e499;
@@ -435,6 +437,7 @@ header{
   }
   .sort-header{
     margin-bottom: 0.75rem;
+    margin-top: 0px;
   }
   header{
     padding-bottom: 1.2rem;
@@ -471,5 +474,9 @@ header{
   }
   .entry-timestamp {
     font-size: 0.95rem;
+  }
+  .parent-tab-item, .parent-tab-item:hover, .parent-tab-item:visited{
+    width: 50%;
+    float: left;
   }
 }
