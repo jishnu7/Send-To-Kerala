@@ -172,8 +172,8 @@ header{
 }
 
 .entry-timestamp {
-  font-size: 0.8em;
-  color: #aaa;
+  font-size: 0.95rem;
+  color: #999;
   font-weight: 400;
 }
 
@@ -470,6 +470,6 @@ header{
     display: none;
   }
   .entry-timestamp {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 }
