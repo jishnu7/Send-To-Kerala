@@ -150,3 +150,20 @@ a:hover {
   font-size: 0.6em;
 }
 
+.entry-target {
+  position: relative;
+  padding-bottom: 1em;
+}
+
+.entry-target:after {
+  position: absolute;
+  content: '';
+  width: 80%;
+  bottom: 0;
+  left: 10%;
+  border-bottom: 1px solid gray;
+}
+
+.entry-needed {
+  padding-top: 1em;
+}

@@ -34,16 +34,17 @@
 
       <div class="entry-info">
         <div class="entry-target">
-          <div class="next-load"></div>
-          to
-          <div class="target-centre"></div>
+          <h3>
+            <span class="next-load"></span>
+            to
+            <span class="target-centre"></span>
+          </h3>
+
           Send Before
-          <li class="active-till"></li>
+          <span class="active-till"></span>
         </div>
 
-        <div class="entry-needed">
-          <li class="priority-items"></li>
-        </div>
+        <div class="entry-needed priority-items"></div>
       </div>
 
       <div class="entry-contact">
