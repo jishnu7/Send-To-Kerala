@@ -278,7 +278,7 @@ header{
 .header-dark{
   color: #444;
 }
-.list-intro-header{
+.list-intro-header, .list-intro-header:hover, .list-intro-header:visited{
   color: #32a010;
   display: inline-block;
   font-size: 1rem;
@@ -307,7 +307,7 @@ header{
   margin-top: 0.3rem;
 }
 .target-centre{
-  font-weight: 300;
+  font-weight: 400;
 }
 .sort-items-container{
   text-align: right;
