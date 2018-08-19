@@ -19,12 +19,12 @@
       <div class="col-md-4 entry-location">
         <div class="row address-details">
           <div class="col-md-9">
-            <h2 class="city"></h2>
+            <h2 class="city-container">From <span class="city"><span></h2>
             <div class="address"></div>
             <div class="state"></div>
           </div>
           <div class="col-md-3 maps-container">
-            <a class="gps" href="gps"><img src="maps-icon.png"></a>
+            <a class="gps" href="gps" target="_blank"><img src="maps-icon.png"></a>
           </div>
         </div>
 
@@ -35,23 +35,26 @@
         </div>
       </div>
 
-      <div class="col-md-4 entry-info">
+      <div class="col-md-5 entry-info">
         <div class="entry-target">
           <h3>
+            To
+            <span class="target-centre"></span>, 
             <span class="next-load"></span>
-            to
-            <span class="target-centre"></span>
           </h3>
 
-          Send Before
-          <span class="active-till"></span>
+          <h4>
+            Send Before
+            <span class="active-till"></span>
+          </h4>
         </div>
 
+        <span class="entry-timestamp">Priority items needed</span>
         <div class="entry-needed priority-items"></div>
       </div>
 
-      <div class="entry-contact">
-        <li class="contact"></li>
+      <div class="col-md-2 entry-contact">
+          <span class="contact"></span>
       </div>
     </div>`
   };

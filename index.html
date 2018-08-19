@@ -6,53 +6,67 @@
     <title>Send to Kerala</title>
 
     <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./normalize.css" type="text/css">
     <link rel="stylesheet" href="./grid12.css" type="text/css">
     <script src="./list.js"></script>
   </head>
   <body>
+    
+      <header>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="logo-container">
+              <a href="http://sendtokerala.in/">
+                <img src="logo.jpg" alt="Logo">
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
     <div class="container">
-        <header>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="logo-container">
-                <a href="http://sendtokerala.in/">
-                  <img src="logo.jpg" alt="Logo">
-                </a>
+      <div id="users">
+        <div class="row nav-container">
+          <div class="col-md-12">
+              <nav class="navigation">
+                <input class="search search-bar" placeholder="Search here..." />
+              </nav>
+          </div>
+          <div class="col-md-12">
+            <div class="row sort-container">
+              <div class="col-md-1">
+                <span class="sort-header">Sort by</span>
+              </div>
+              <div class="col-md-11">
+                <button class="sort" data-sort="next-load">
+                  Based on Next Load
+                </button>
+
+                <button class="sort" data-sort="active-till">
+                  Based on Active Till
+                </button>
+
+                <button class="sort" data-sort="last-update">
+                  Based on Last update
+                </button>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="row">
-            <div class="col-md-10">
-                <nav class="navigation">
-                  <input class="search search-bar" placeholder="Search here..." />
-                </nav>
-            </div>
-            <div class="col-md-2">
-              <nav class="navigation">
-                <button class="sort" data-sort="next-load">
-                  Sort Based on Next Load
-                </button>
-                <button class="sort" data-sort="active-till">
-                  Sort Based on Active Till
-                </button>
-                <button class="sort" data-sort="last-update">
-                  Sort Based on Last update
-                </button>
-              </nav>
-            </div>
-          </div>
-        </header>
-
-
-        <section>
-          <div id="users">
+        <div class="row">
+          <div class="col-md-12">
             <ul class="list"></ul>
           </div>
+        </div>
+      </div>
+    </div>
+
 
           <script src="./data_collection.js" async></script>
           <script src="./script.js" async></script>
-        </section>
-    </div>
+
+
+
   </body>
 </html>
