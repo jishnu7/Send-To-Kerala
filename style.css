@@ -250,9 +250,10 @@ header{
   margin-right: 15px;
 }
 .list-intro-header{
-  color: #888;
+  color: #32a010;
+  display: inline-block;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 400;
   margin: 15px 0px 0px 0px;
 }
 .sort{
@@ -281,6 +282,9 @@ header{
 }
 .sort-items-container{
   text-align: right;
+}
+.mr5{
+  margin-right: 5px; 
 }
 
 @media(max-width: 800px){
