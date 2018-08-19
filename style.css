@@ -318,6 +318,11 @@ header{
   border-radius: 3px;
   width: 70%;
 }
+.hide{
+  display: none;
+}
+
+
 @keyframes placeHolderShimmer{
     0%{
         background-position: -400px 0
