@@ -120,6 +120,10 @@ a:hover {
   }
 }
 
+.nav-container {
+  margin-bottom: 2em;
+}
+
 .navigation {
   display: flex;
   justify-content: center;
