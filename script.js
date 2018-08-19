@@ -43,7 +43,7 @@
           </h3>
 
           <h4>
-            Send Before
+            Camp active till
             <span class="active-till"></span>
           </h4>
         </div>
