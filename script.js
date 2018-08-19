@@ -73,23 +73,31 @@
       'priority-items': row['gsx$contact'] && row['gsx$contact'].$t,
       'added-on': row['gsx$timestamp'] && row['gsx$timestamp'].$t,
       'last-update': row['gsx$last-update'] && row['gsx$last-update'].$t,
-      'status': row['gsx$status'] && row['gsx$status'].$t
+      'status': row['gsx$status'] && row['gsx$status'].$t,
+      'verified': row['gsx$verified'] && row['gsx$verified'].$t
     }
   }
 
   $.getJSON("http://data.sendtokerala.in/proxy.php?csurl=spreadsheets.google.com/feeds/list/10DP6QY4GuhWUlN9MT4Z7tszpg6DOqx6R6QRfQTDq_c8/1/public/values?alt=json", function (data, status)  {
+    var verifiedCentres = [];
+    var unverifiedCentres = [];
 
     if (status==='success') {
       document.getElementById('loader').classList.add("hide");
     }
-
-    var centres = [];
-
     data.feed.entry.forEach(function (row) {
-      centres.push(parseRow(row));
+      var rowData = parseRow(row);
+
+      if (rowData.verified) {
+        verifiedCentres.push(parseRow(row));
+      } else {
+        unverifiedCentres.push(parseRow(row));
+      }
     });
 
-    var userList = new List('users', options, centres);
+    var verifiedList = new List('verified', options, verifiedCentres);
+    var unverifiedList = new List('unverified', options, unverifiedCentres);
+
     $('#list-length').innerHTML = centres.length
   });
 
