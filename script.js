@@ -52,7 +52,7 @@
         <div class="entry-needed priority-items"></div>
       </div>
 
-      <div class="col-md-2 entry-contact">
+      <div class="col-md-3 entry-contact">
           <span class="contact"></span>
       </div>
     </div>`
@@ -65,6 +65,10 @@
     return val && val.$t ? val.$t + post : '';
   }
 
+  function commaLineBreak(val) {
+    return val.split(',').join("<br/>");
+  }
+
   function parseRow (row) {
     return {
       'country': getProp(row, 'country'),
@@ -75,7 +79,7 @@
       'next-load': getProp(row, 'nextload', ','),
       'active-till': getProp(row, 'centreactivetill'),
       'target-centre': getProp(row, 'targetcentre'),
-      'contact': getProp(row, 'contactdetails'),
+      'contact': commaLineBreak(getProp(row, 'contactdetails')),
       'priority-items': getProp(row, 'priorityitems'),
       'added-on': getProp(row, 'timestamp'),
       'last-update': getProp(row, 'lastupdate'),
