@@ -325,6 +325,10 @@ header{
     background-size: 800px 104px !important;
     position: relative;
 }
+.loader{
+  display: none;
+}
+
 @media(max-width: 800px){
   .sort-items-container{
     text-align: left;
