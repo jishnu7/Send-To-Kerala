@@ -86,7 +86,7 @@
     var unverifiedCentres = [];
 
     if (status==='success') {
-      $('.loader').addClass("hide");
+      $('.loader').hide();
     }
 
     data.feed.entry.forEach(function (row) {

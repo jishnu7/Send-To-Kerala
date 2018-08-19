@@ -336,9 +336,7 @@ header{
     background-size: 800px 104px !important;
     position: relative;
 }
-.hide{
-  display: none;
-}
+
 .placeholder-entry-info .address-details{
   min-height: 100px;
 }
