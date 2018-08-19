@@ -127,10 +127,10 @@ header{
 }
 
 .navigation {
-  position: relative;
-  top: 0.5rem;
-  justify-content: center;
-  margin-bottom: 0.5em;
+    position: relative;
+    top: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1.3em;
 }
 .sort-container{
   /*margin-top: 0.7rem;*/
@@ -266,8 +266,9 @@ header{
   border-color: #c6e499;
 }
 .logo-svg{
-  max-height: 56px;
-  width: 102px;
+  max-height: 44px;
+  width: 181px;
+  margin-top: 0.3rem;
 }
 .target-centre{
   font-weight: 300;
@@ -289,7 +290,12 @@ header{
     padding-bottom: 1.2rem;
   }
   .logo-svg{
-    max-height: 48px;
-    width: 88px;
+    max-height: 44px;
+    width: 181px;
+    margin-top: 0rem;
+  }
+  .navigation{
+    top: 0rem;
+    margin-bottom: 0.5rem;
   }
 }
