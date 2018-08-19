@@ -244,10 +244,16 @@ header{
 .sort-header{
   display: inline-block;
   color: #888;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 100;
   position: relative;
-  top: 0.85rem;
+  margin-right: 15px;
+}
+.list-intro-header{
+  color: #888;
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 15px 0px 0px 0px;
 }
 .sort{
   background: #fff;
@@ -273,8 +279,14 @@ header{
 .target-centre{
   font-weight: 300;
 }
+.sort-items-container{
+  text-align: right;
+}
 
 @media(max-width: 800px){
+  .sort-items-container{
+    text-align: left;
+  }
   .nav-container {
     margin-left: -15px !important;
     margin-right: -15px !important; 
@@ -300,5 +312,11 @@ header{
   }
   .logo-container {
     text-align: center;
+  }
+  .entry > div:not(:last-child):after {
+    display: none;
+  }
+  .list-intro-header{
+    margin-top: 5px;
   }
 }
