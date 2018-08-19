@@ -15,21 +15,37 @@
       'last-update'
     ],
 
-    item: `<ul class="entry">
-        <li class="state"></li>
-        <li class="city"></li>
-        <li class="address"></li>
-        <li>
-          <a class="gps" href="gps">Google Maps</a>
-        </li>
-        <li class="next-load"></li>
-        <li class="target-centre"></li>
-        <li class="active-till"></li>
+    item: `<div class="entry">
+      <div class="entry-location">
+        <h2 class="city"></h2>
+        <div class="address"></div>
+        <div class="state"></div>
+        <a class="gps" href="gps">Google Maps</a>
+
+        <div class="entry-timestamp">
+          Added: <div class="added-on"></div>
+          Last Update: <div class="last-update"></div>
+        </div>
+      </div>
+
+      <div class="entry-info">
+        <div class="entry-target">
+          <div class="next-load"></div>
+          to
+          <div class="target-centre"></div>
+          Send Before
+          <li class="active-till"></li>
+        </div>
+
+        <div class="entry-needed">
+          <li class="priority-items"></li>
+        </div>
+      </div>
+
+      <div class="entry-contact">
         <li class="contact"></li>
-        <li class="priority-items"></li>
-        <li class="added-on"></li>
-        <li class="last-update"></li>
-    </ul>`
+      </div>
+    </div>`
   };
   
   var userList = new List('users', options, COLLECTION_CENTRES);
