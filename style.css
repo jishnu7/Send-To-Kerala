@@ -270,6 +270,9 @@ header{
   margin-right: 15px;
   margin-bottom: 0px;
 }
+.header-dark{
+  color: #444;
+}
 .list-intro-header{
   color: #32a010;
   display: inline-block;
