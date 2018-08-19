@@ -48,23 +48,23 @@
           </h4>
         </div>
 
-        <span class="entry-timestamp">Priority items needed</span>
         <div class="entry-needed priority-items"></div>
       </div>
 
       <div class="col-md-3 entry-contact">
-        <div class="title-contact">Contact</div>
+        <div class="entry-title">Contact</div>
 
         <div class="contact"></div>
       </div>
     </div>`
   };
 
-  function getProp (row, name, post) {
+  function getProp (row, name, pre, post) {
     var val = row['gsx$' + name];
+    pre = pre || '';
     post = post || '';
 
-    return val && val.$t ? val.$t + post : '';
+    return val && val.$t ? pre + val.$t + post : '';
   }
 
   function commaLineBreak(val) {
@@ -78,11 +78,11 @@
       'city': getProp(row, 'location'),
       'address': getProp(row, 'locationaddress'),
       'gps': getProp(row, 'addressmaplink'),
-      'next-load': getProp(row, 'nextload', ','),
+      'next-load': getProp(row, 'nextload', null, ','),
       'active-till': getProp(row, 'centreactivetill'),
       'target-centre': getProp(row, 'targetcentre'),
       'contact': commaLineBreak(getProp(row, 'contactdetails')),
-      'priority-items': getProp(row, 'priorityitems'),
+      'priority-items': getProp(row, 'priorityitems', '<div class="entry-title">Priority items needed</div>'),
       'added-on': getProp(row, 'timestamp'),
       'last-update': getProp(row, 'lastupdate'),
       'verified': getProp(row, 'verified')

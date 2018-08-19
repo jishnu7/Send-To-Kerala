@@ -135,12 +135,6 @@ header{
   position: relative;
 }
 
-.entry-timestamp {
-  font-size: 0.95rem;
-  color: #999;
-  font-weight: 400;
-}
-
 .entry-target {
   position: relative;
   padding-bottom: 1em;
@@ -455,7 +449,7 @@ footer > a {
   }
 }
 
-.title-contact {
+.entry-title {
   font-size: 0.95rem;
   color: #999;
   font-weight: 400;
