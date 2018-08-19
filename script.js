@@ -19,7 +19,7 @@
       <div class="col-md-4 entry-location">
         <div class="row address-details">
           <div class="col-xs-9">
-            <h2 class="city-container">From <span class="city"><span></h2>
+            <h2 class="city-container"><span class="city"><span></h2>
             <div class="address"></div>
             <div class="state"></div>
           </div>
@@ -38,9 +38,8 @@
       <div class="col-md-5 entry-info">
         <div class="entry-target">
           <h3>
-            To
-            <span class="target-centre"></span>, 
-            <span class="next-load"></span>
+            <span class="next-load"></span>,
+            <span class="target-centre"></span> 
           </h3>
 
           <h4>
