@@ -265,6 +265,10 @@ header{
   color: #4e701d;
   border-color: #c6e499;
 }
+.logo-svg{
+  max-height: 56px;
+  width: 102px;
+}
 
 @media(max-width: 800px){
   .nav-container {
@@ -280,5 +284,9 @@ header{
   }
   header{
     padding-bottom: 1.2rem;
+  }
+  .logo-svg{
+    max-height: 48px;
+    width: 88px;
   }
 }
