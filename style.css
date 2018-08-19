@@ -129,10 +129,10 @@ header{
 .navigation {
   display: flex;
   justify-content: center;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .sort-container{
-  margin-top: 0.7rem;
+  /*margin-top: 0.7rem;*/
 }
 
 .entry {
@@ -258,7 +258,7 @@ header{
 }
 .sort.asc{
   background: #c7e1fc;
-  color: #007ef6;
+  color: #316ca6;
   border-color: #c7e1fc;
 }
 
