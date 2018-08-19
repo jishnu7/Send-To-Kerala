@@ -53,7 +53,9 @@
       </div>
 
       <div class="col-md-3 entry-contact">
-          <span class="contact"></span>
+        <div class="title-contact">Contact</div>
+
+        <div class="contact"></div>
       </div>
     </div>`
   };
