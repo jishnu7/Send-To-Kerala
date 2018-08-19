@@ -84,7 +84,7 @@
     });
 
     var userList = new List('users', options, centres);
-    document.getElementById('list-length').innerHTML = userList.size();
+    $('#list-length').innerHTML = centres.length
   });
 
 })();
