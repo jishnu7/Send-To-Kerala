@@ -331,10 +331,6 @@ header{
 .hide{
   display: none;
 }
-.link-normal, .link-normal:hover, .link-normal:visited{
-  color: #4e701d;
-}
-
 
 @keyframes placeHolderShimmer{
     0%{
@@ -390,9 +386,14 @@ header{
   padding: 0px;
 }
 
-.footer{
+footer{
   border-top: 1px solid #ddd;
   text-align: center;
+  padding: 3em;
+}
+
+footer > a {
+  color: #999;
 }
 
 @media(min-width: 800px){
