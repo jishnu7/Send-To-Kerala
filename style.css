@@ -256,7 +256,7 @@ header{
   margin: 0em 0em 1em 0em;
   color: #666;
 }
-.address{
+.address, .contact{
   margin-bottom: 0.2rem;
   line-height: 1.4;
 }
