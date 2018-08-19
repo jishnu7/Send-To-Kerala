@@ -120,21 +120,33 @@ a:hover {
   }
 }
 
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+
 .entry {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   display: flex;
 }
 
-.navigation {
-  display: flex;
-  justify-content: center;
+.entry > div {
+  padding: 1em;
+  position: relative;
+}
+
+.entry > div:not(:last-child):after {
+  position: absolute;
+  content: '';
+  height: 80%;
+  top: 10%;
+  right: 0;
+  border-right: 1px solid gray;
 }
 
 .entry-timestamp {
   font-size: 0.6em;
 }
 
-.entry-location, .entry-info, .entry-contact {
-  padding: 1em;
-}
