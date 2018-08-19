@@ -261,12 +261,14 @@ header{
   max-width: 28px;
 }
 .sort-header{
+  margin-top: 15px;
   display: inline-block;
   color: #888;
   font-size: 1rem;
   font-weight: 100;
   position: relative;
   margin-right: 15px;
+  margin-bottom: 0px;
 }
 .list-intro-header{
   color: #32a010;
@@ -346,12 +348,36 @@ header{
   display: inline-block;
 }
 
+.parent-tabs-container{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 1.5rem;
+}
+
+.parent-tab-item{
+  display: inline-block;
+  padding: 15px 15px;
+  color: #bbb;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.parent-tab-item-selected{
+  border-bottom: 5px solid #c6e499;
+  color: #333;
+}
+
 @media(min-width: 800px){
   .web-only{
     display: block;
   }
   .mob-only{
     display: none;
+  }
+  .web-align-right{
+    text-align: right;
   }
 }
 

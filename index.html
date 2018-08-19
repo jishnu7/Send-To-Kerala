@@ -44,13 +44,114 @@
       </div>
     </header>
 
-    <div id="verified">
+    <div class="container">
+      <div class="parent-tabs-container">
+          <a class="parent-tab-item" id="parent-tab-item-verified" onclick="switchTab('verified')">Verified</a>
+          <a class="parent-tab-item" id="parent-tab-item-unverified" onclick="switchTab('unverified')">Unverified</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="loader">
+            <div class="row entry">
+              <div class="col-md-4 entry-location">
+                <div class="row address-details">
+                  <div class="col-xs-9">
+                    <div class="placeholder-big animated-bg"></div>
+                    <div class="placeholder-small animated-bg"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 entry-info placeholder-entry-info">
+                <div class="row address-details">
+                  <div class="col-xs-9">
+                    <div class="placeholder-big animated-bg"></div>
+                    <div class="placeholder-small animated-bg"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 entry-contact">
+                <div class="row address-details">
+                  <div class="col-xs-9">
+                    <div class="placeholder-small animated-bg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row entry">
+              <div class="col-md-4 entry-location">
+                <div class="row address-details">
+                  <div class="col-xs-9">
+                    <div class="placeholder-big animated-bg"></div>
+                    <div class="placeholder-small animated-bg"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 entry-info placeholder-entry-info">
+                <div class="row address-details">
+                  <div class="col-xs-9">
+                    <div class="placeholder-big animated-bg"></div>
+                    <div class="placeholder-small animated-bg"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 entry-contact">
+                <div class="row address-details">
+                  <div class="col-xs-9">
+                    <div class="placeholder-small animated-bg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row entry">
+              <div class="col-md-4 entry-location">
+                <div class="row address-details">
+                  <div class="col-xs-9">
+                    <div class="placeholder-big animated-bg"></div>
+                    <div class="placeholder-small animated-bg"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 entry-info placeholder-entry-info">
+                <div class="row address-details">
+                  <div class="col-xs-9">
+                    <div class="placeholder-big animated-bg"></div>
+                    <div class="placeholder-small animated-bg"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 entry-contact">
+                <div class="row address-details">
+                  <div class="col-xs-9">
+                    <div class="placeholder-small animated-bg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="verified" class="hide">
       <div class="container">
-        <h2>Verified</h2>
         <div class="row nav-container">
           <div class="col-md-12">
             <div class="row sort-container">
               <div class="col-md-7">
+                <p class="sort-header">Following are the verified entries, manually vetted by our dedicated team of volunteers.</p>
+              </div>
+              <div class="col-md-5 web-align-right">
                 <span class="sort-header">Sort by</span>
 <!--                 <button class="sort" data-sort="next-load">
                   Load date
@@ -63,115 +164,27 @@
                   Last update
                 </button>
               </div>
-              <div class="col-md-5 sort-items-container">
-                <a class="list-intro-header web-only-inline" href="http://bit.ly/sendtokerala" target="_blank"><span class="icon-plus-circle mr5"></span>Add new center</a>
-                <a class="list-intro-header mob-only center" href="http://bit.ly/sendtokerala" target="_blank"><span class="icon-plus-circle mr5"></span>Add new center</a>
-              </div>
             </div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-12">
-            <div class="loader">
-              <div class="row entry">
-                <div class="col-md-4 entry-location">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-big animated-bg"></div>
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-5 entry-info placeholder-entry-info">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-big animated-bg"></div>
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-2 entry-contact">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row entry">
-                <div class="col-md-4 entry-location">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-big animated-bg"></div>
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-5 entry-info placeholder-entry-info">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-big animated-bg"></div>
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-2 entry-contact">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row entry">
-                <div class="col-md-4 entry-location">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-big animated-bg"></div>
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-5 entry-info placeholder-entry-info">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-big animated-bg"></div>
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-2 entry-contact">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <ul class="list"></ul>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="unverified">
+    <div id="unverified" class="hide">
       <div class="container">
-        <h2>Unverified</h2>
         <div class="row nav-container">
           <div class="col-md-12">
             <div class="row sort-container">
               <div class="col-md-7">
+                <p class="sort-header">These entries are unverified, our team of volunteers are yet to vet them.</p>
+              </div>
+              <div class="col-md-5 web-align-right">
                 <span class="sort-header">Sort by</span>
 <!--                 <button class="sort" data-sort="next-load">
                   Load date
@@ -190,36 +203,6 @@
 
         <div class="row">
           <div class="col-md-12">
-            <div class="loader">
-              <div class="row entry">
-                <div class="col-md-4 entry-location">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-big animated-bg"></div>
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-5 entry-info placeholder-entry-info">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-big animated-bg"></div>
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-2 entry-contact">
-                  <div class="row address-details">
-                    <div class="col-xs-9">
-                      <div class="placeholder-small animated-bg"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <ul class="list"></ul>
           </div>
         </div>

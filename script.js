@@ -84,6 +84,7 @@
 
     if (status==='success') {
       $('.loader').addClass("hide");
+      switchTab("verified");
     }
 
     data.feed.entry.forEach(function (row) {
@@ -108,5 +109,23 @@
     });
   });
 
+
 })();
 
+
+function switchTab(tab){
+  if(tab==='verified'){
+    document.getElementById("verified").classList.remove("hide");
+    document.getElementById("unverified").classList.add("hide");
+
+    document.getElementById("parent-tab-item-verified").classList.add("parent-tab-item-selected");
+    document.getElementById("parent-tab-item-unverified").classList.remove("parent-tab-item-selected");
+
+  } else {
+    document.getElementById("unverified").classList.remove("hide");
+    document.getElementById("verified").classList.add("hide");
+
+    document.getElementById("parent-tab-item-unverified").classList.add("parent-tab-item-selected");
+    document.getElementById("parent-tab-item-verified").classList.remove("parent-tab-item-selected");
+  }
+}
