@@ -21,7 +21,7 @@
         <p><span class="icon-info mr5"></span>This collection point is not operating anymore</p>
       </div>
       <div class="col-md-12 status-message-paused">
-        <p><span class="icon-info mr5"></span>This collection point has temporaruly paused it's operations</p>
+        <p><span class="icon-info mr5"></span>This collection point has temporarily paused it's operations</p>
       </div>
       <div class="col-md-4 entry-location">
         <div class="row address-details">
