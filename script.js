@@ -53,7 +53,7 @@
           </h3>
 
           <h4>
-            Camp active till
+            Collection active till
             <span class="active-till"></span>
           </h4>
         </div>
@@ -128,8 +128,8 @@
 
     $('#search-field').on('keyup', function() {
       var searchString = $(this).val();
-      verifiedList.search(searchString);
-      unverifiedList.search(searchString);
+      verifiedList.fuzzySearch(searchString);
+      unverifiedList.fuzzySearch(searchString);
     });
   });
 })();
