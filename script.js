@@ -122,8 +122,8 @@
 
     $('#search-field').on('keyup', function() {
       var searchString = $(this).val();
-      verifiedList.search(searchString);
-      unverifiedList.search(searchString);
+      verifiedList.fuzzySearch(searchString);
+      unverifiedList.fuzzySearch(searchString);
     });
   });
 })();
