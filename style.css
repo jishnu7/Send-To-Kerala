@@ -218,6 +218,9 @@ header{
   line-height: 1.4;
   word-wrap: break-word;
 }
+.priority-items {
+  word-wrap: break-word;
+}
 .maps-container{
   text-align: right;
 }
