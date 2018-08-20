@@ -47,7 +47,7 @@
           </h3>
 
           <h4>
-            Camp active till
+            Collection active till
             <span class="active-till"></span>
           </h4>
         </div>
