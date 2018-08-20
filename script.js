@@ -12,10 +12,11 @@
       'contact',
       'priority-items',
       'added-on',
-      'last-update'
+      'last-update',
+      { data: ['status'] }
     ],
 
-    item: `<div class="row entry">
+    item: `<div class="status row entry">
       <div class="col-md-4 entry-location">
         <div class="row address-details">
           <div class="col-xs-9">
@@ -88,6 +89,7 @@
       'priority-items': getProp(row, 'priorityitems', '<div class="entry-title">Priority items needed</div>'),
       'added-on': getProp(row, 'timestamp'),
       'last-update': getProp(row, 'lastupdate'),
+      'status': getProp(row, 'status'),
       'verified': getProp(row, 'verified')
     }
   }
