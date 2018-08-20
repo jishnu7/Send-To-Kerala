@@ -71,7 +71,7 @@
   }
 
   function commaLineBreak(val) {
-    return val.split(',').join("<br/>");
+    return val.split(',').join(",<br/>");
   }
 
   function parseRow (row) {
