@@ -460,8 +460,10 @@ footer > a {
 
 [data-status="expired"] {
   background: #ffcdd2;
+  border: 1px solid #ff7983;
 }
 
 [data-status="paused"] {
   background: #fff9c4;
+  border: 1px solid #FFC107;  
 }
