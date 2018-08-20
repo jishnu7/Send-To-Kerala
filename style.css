@@ -458,12 +458,31 @@ footer > a {
   margin-bottom: 0.5em;
 }
 
+.status-message-expired, .status-message-paused{
+  display: none;
+}
+
 [data-status="expired"] {
   background: #ffcdd2;
   border: 1px solid #ff7983;
 }
 
+[data-status="expired"] .status-message-expired{
+  display: block;
+  border-bottom: 1px solid #ff7983;
+  color: #9a343c;
+}
+[data-status="expired"] .status-message-expired p, [data-status="paused"] .status-message-paused p{
+  margin: 0px !important;
+}
+
 [data-status="paused"] {
   background: #fff9c4;
   border: 1px solid #FFC107;  
+}
+
+[data-status="paused"] .status-message-paused{
+  display: block;
+  border-bottom: 1px solid #FFC107;
+  color: #a27b07;
 }
