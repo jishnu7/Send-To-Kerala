@@ -101,15 +101,16 @@
       $('.loader').hide();
     }
 
-    data.feed.entry.forEach(function (row) {
-      var rowData = parseRow(row);
+    var i;
+    for (i=data.feed.entry.length; i > 0; i--) {
+      var rowData = parseRow(data.feed.entry[i-1]);
 
       if (rowData.verified.toLowerCase() === "verified") {
-        verifiedCentres.push(parseRow(row));
+        verifiedCentres.push(rowData);
       } else if (rowData.verified.toLowerCase() === "unverified") {
-        unverifiedCentres.push(parseRow(row));
+        unverifiedCentres.push(rowData);
       }
-    });
+    };
 
     var verifiedList = new List('verified', options, verifiedCentres);
     var unverifiedList = new List('unverified', options, unverifiedCentres);
